@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Mi Portafolio</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,8 +30,12 @@
   <body>
     <!-- Vertical navbar -->
     <div class="vertical-nav bg-white active" id="sidebar">
-      <div class="py-4 px-3 mb-4 bg-light">
-        <div class="media d-flex align-items-center">
+      <div
+        class="py-4 px-3 mb-4 bg-light"
+        data-toggle="modal"
+        data-target="#product_view"
+      >
+        <div class="media d-flex align-items-center plus-img">
           <img
             src="./img/WhatsApp Image 2019-08-27 at 10.52.57 PM.jpeg"
             alt="..."
@@ -41,6 +45,7 @@
           <div class="media-body">
             <h4 class="m-0">Frank Andia</h4>
             <p class="font-weight-light text-muted mb-0">Web Developer</p>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button> -->
           </div>
         </div>
       </div>
@@ -72,51 +77,89 @@
           </a>
         </li>
         <!-- <li class="nav-item">
-          <a href="./galeria.html" class="nav-link text-dark font-italic">
-            <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-            Galleria
-          </a>
-        </li> -->
+        <a href="./galeria.html" class="nav-link text-dark font-italic">
+          <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+          Galleria
+        </a>
+      </li> -->
       </ul>
-
       <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
-        Algunos Proyectos
+        Algunos Proyectos Móviles
+      </p>
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a
+            href="./proyectos-moviles.html"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-mobile mr-3 text-primary fa-fw"></i>
+            Aplicaciones Móviles
+          </a>
+        </li>
+      </ul>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
+        Algunos Proyectos Web
       </p>
 
       <ul class="nav flex-column bg-white mb-0">
         <li class="nav-item">
-          <a href="https://franklam7.github.io/Tienda-Online/#/" target="_blanck" class="nav-link text-dark font-italic">
-            <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+          <a
+            href="https://franklam7.github.io/Tienda-Online/#/"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-shopping-cart mr-3 text-primary fa-fw"></i>
             Tienda Online
           </a>
         </li>
         <li class="nav-item">
-          <a href="https://franklam7.github.io/PeliculasApp/" target="_blanck" id="mapas" class="nav-link text-dark font-italic">
-            <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+          <a
+            href="https://franklam7.github.io/PeliculasApp/"
+            target="_blanck"
+            id="mapas"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-film mr-3 text-primary fa-fw"></i>
             Peliculas App
           </a>
         </li>
         <li class="nav-item">
-          <a href="https://franklam7.github.io/Mi-Galeria/index.html" target="_blanck" class="nav-link text-dark font-italic">
-            <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+          <a
+            href="https://franklam7.github.io/Mi-Galeria/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-camera mr-3 text-primary fa-fw"></i>
             Mi Galeria
           </a>
         </li>
         <li class="nav-item">
-          <a href="https://franklam7.github.io/ProyectoRutas/ProyectoRutas/index.html" target="_blanck" class="nav-link text-dark font-italic">
-            <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+          <a
+            href="https://franklam7.github.io/ProyectoRutas/ProyectoRutas/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-map-marker mr-3 text-primary fa-fw"></i>
             Proyecto Rutas
           </a>
         </li>
         <li class="nav-item">
-          <a href="https://franklam7.github.io/ProyectoJS/index.html" target="_blanck" class="nav-link text-dark font-italic">
-            <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+          <a
+            href="https://franklam7.github.io/ProyectoJS/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-globe mr-3 text-primary fa-fw"></i>
             Proyecto Blog
           </a>
         </li>
         <li class="nav-item">
-          <a href="https://franklam7.github.io/Codigo5-Semana2-PaginaCounterStrike/index.html" target="_blanck" class="nav-link text-dark font-italic">
-            <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+          <a
+            href="https://franklam7.github.io/Codigo5-Semana2-PaginaCounterStrike/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-gamepad mr-3 text-primary fa-fw"></i>
             CS
           </a>
         </li>
@@ -136,13 +179,10 @@
         ><small class="text-uppercase font-weight-bold">Toggle</small>
       </button>
 
-      <h2 class="display-4 text-white animated zoomInDown">Contactame</h2>
+      <h2 class="display-4 text-white animated zoomInDown">Contáctame</h2>
       <div class="col-lg-7 animated zoomInDown">
         <div class="bg-white p-5 rounded my-5 shadow-sm">
-          <p class="lead font-italic mb-0 text-muted">
-            <i class="fas fa-mobile-alt    "></i>
-            <span> +51 982739106</span>
-          </p>
+          <!--  -->
           <p class="lead font-italic mb-0 text-muted">
             <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
             <span
@@ -181,6 +221,21 @@
         </div>
       </div>
     </div>
+    <!-- image view
+     -->
+     <div class="modal fade product_view" id="product_view">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-6 product_img">
+                          <img src="./img/WhatsApp Image 2019-08-27 at 10.52.57 PM.jpeg" class="img-responsive" width="370"/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    <!-- end image view -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

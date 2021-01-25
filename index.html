@@ -1,197 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index2.css" />
+    <title>Mi Portafolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-    integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/index2.css">
-  <title>Mi Portafolio</title>
-</head>
-
-<body>
-  <!-- Vertical navbar -->
-  <div class="vertical-nav bg-white active" id="sidebar">
-    <div class="py-4 px-3 mb-4 bg-light">
-      <div class="media d-flex align-items-center"><img src="./img/WhatsApp Image 2019-08-27 at 10.52.57 PM.jpeg"
-          alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
-        <div class="media-body">
-          <h4 class="m-0">Frank Andia</h4>
-          <p class="font-weight-light text-muted mb-0">Web Developer</p>
+  <body>
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-white active" id="sidebar">
+      <div class="py-4 px-3 mb-4 bg-light" data-toggle="modal" data-target="#product_view">
+        <div class="media d-flex align-items-center plus-img" >
+          <img
+            src="./img/WhatsApp Image 2019-08-27 at 10.52.57 PM.jpeg"
+            alt="..."
+            width="65"
+            class="mr-3 rounded-circle img-thumbnail shadow-sm"
+          />
+          <div class="media-body">
+            <h4 class="m-0">Frank Andia</h4>
+            <p class="font-weight-light text-muted mb-0">Web Developer</p>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button> -->
+          </div>
         </div>
       </div>
-    </div>
 
-    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+        Main
+      </p>
 
-    <ul class="nav flex-column bg-white mb-0">
-      <li class="nav-item">
-        <a href="./index.html" class="nav-link text-dark font-italic bg-light">
-          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-          Inicio
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="./contacto.html" class="nav-link text-dark font-italic">
-          <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-          Contacto
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="./servicios.html" class="nav-link text-dark font-italic">
-          <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-          Servicios
-        </a>
-      </li>
-      <!-- <li class="nav-item">
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a
+            href="./index.html"
+            class="nav-link text-dark font-italic bg-light"
+          >
+            <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+            Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./contacto.html" class="nav-link text-dark font-italic">
+            <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+            Contacto
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./servicios.html" class="nav-link text-dark font-italic">
+            <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+            Servicios
+          </a>
+        </li>
+        <!-- <li class="nav-item">
         <a href="./galeria.html" class="nav-link text-dark font-italic">
           <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
           Galleria
         </a>
       </li> -->
-    </ul>
+      </ul>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
+        Algunos Proyectos Móviles
+      </p>
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a
+            href="./proyectos-moviles.html"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-mobile mr-3 text-primary fa-fw"></i>
+            Aplicaciones Móviles
+          </a>
+        </li>
+      </ul>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
+        Algunos Proyectos Web
+      </p>
 
-    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Algunos Proyectos</p>
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a
+            href="https://franklam7.github.io/Tienda-Online/#/"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-shopping-cart mr-3 text-primary fa-fw"></i>
+            Tienda Online
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://franklam7.github.io/PeliculasApp/"
+            target="_blanck"
+            id="mapas"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-film mr-3 text-primary fa-fw"></i>
+            Peliculas App
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://franklam7.github.io/Mi-Galeria/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-camera mr-3 text-primary fa-fw"></i>
+            Mi Galeria
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://franklam7.github.io/ProyectoRutas/ProyectoRutas/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-map-marker mr-3 text-primary fa-fw"></i>
+            Proyecto Rutas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://franklam7.github.io/ProyectoJS/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-globe mr-3 text-primary fa-fw"></i>
+            Proyecto Blog
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://franklam7.github.io/Codigo5-Semana2-PaginaCounterStrike/index.html"
+            target="_blanck"
+            class="nav-link text-dark font-italic"
+          >
+            <i class="fa fa-gamepad mr-3 text-primary fa-fw"></i>
+            CS
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End vertical navbar -->
 
-    <ul class="nav flex-column bg-white mb-0">
-      <li class="nav-item">
-        <a href="https://franklam7.github.io/Tienda-Online/#/" target="_blanck" class="nav-link text-dark font-italic">
-          <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-          Tienda Online
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://franklam7.github.io/PeliculasApp/" target="_blanck" id="mapas" class="nav-link text-dark font-italic">
-          <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-          Peliculas App
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://franklam7.github.io/Mi-Galeria/index.html" target="_blanck" class="nav-link text-dark font-italic">
-          <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-          Mi Galeria
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://franklam7.github.io/ProyectoRutas/ProyectoRutas/index.html" target="_blanck" class="nav-link text-dark font-italic">
-          <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
-          Proyecto Rutas
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://franklam7.github.io/ProyectoJS/index.html" target="_blanck" class="nav-link text-dark font-italic">
-          <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-          Proyecto Blog
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://franklam7.github.io/Codigo5-Semana2-PaginaCounterStrike/index.html" target="_blanck" class="nav-link text-dark font-italic">
-          <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-          CS
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- End vertical navbar -->
+    <!-- Page content holder -->
+    <div class="page-content p-5 active" id="content">
+      <!-- Toggle button -->
+      <button
+        id="sidebarCollapse"
+        type="button"
+        class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"
+      >
+        <i class="fa fa-bars mr-2"></i
+        ><small class="text-uppercase font-weight-bold">Toggle</small>
+      </button>
 
-
-  <!-- Page content holder -->
-  <div class="page-content p-5 active" id="content">
-    <!-- Toggle button -->
-    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i
-        class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
-
-    <!-- Demo content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
-          <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
-            <ul class="list-group">
-              <a href="#" class="list-group-item active">
-               <i class="fa fa-home" aria-hidden="true"></i> Bienvenido(a)
-              </a>
-              <a href="#" class="list-group-item ">
-               <i class="fa fa-info-circle" aria-hidden="true"></i> Información
-              </a>
-              <a href="#" class="list-group-item ">
-               <i class="fa fa-book" aria-hidden="true"></i> Estudios
-              </a>
-              <!-- <a href="#" class="list-group-item">
+      <!-- Demo content -->
+      <div class="container">
+        <div class="row row2">
+          <div
+            class="col-lg-10 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container"
+          >
+            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+              <ul class="list-group">
+                <a href="#" class="list-group-item active">
+                  <i class="fa fa-home" aria-hidden="true"></i> Bienvenido(a)
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  Información
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-book" aria-hidden="true"></i> Estudios
+                </a>
+                <!-- <a href="#" class="list-group-item">
                 
                 <h4 class="glyphicon glyphicon-wrench"></h4> Edit My Information
               </a> -->
-            </ul>
-          </div>
-          <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
-            <!-- flight section -->
-            <div class="bhoechie-tab-content active" id="tit" style="align-items: center">
-              <center>
-                <!-- <h1 class="glyphicon glyphicon-user" style="font-size:14em;color:#00001a"></h1> -->
-                <!-- <h2 style="margin-top: 0;color:#00001a">Welcome</h2> -->
-                <h2 style="margin-top: 0; margin-bottom: 0;">Frank</h2>
-                <h2 style="margin-top: 0;">Home Page</h2>
-              </center>
+              </ul>
             </div>
+            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+              <!-- flight section -->
+              <div
+                class="bhoechie-tab-content active"
+                id="tit"
+                style="align-items: center"
+              >
+                <center>
+                  <!-- <h1 class="glyphicon glyphicon-user" style="font-size:14em;color:#00001a"></h1> -->
+                  <!-- <h2 style="margin-top: 0;color:#00001a">Welcome</h2> -->
+                  <h2 style="margin-top: 0; margin-bottom: 0">Frank</h2>
+                  <h2 style="margin-top: 0">Home Page</h2>
+                </center>
+              </div>
 
-
-            <div class="bhoechie-tab-content">
-              <center>
-                <!-- <h1 class="glyphicon glyphicon-tasks" style="font-size:12em;color:#00001a">a</h1>
+              <div class="bhoechie-tab-content">
+                <center>
+                  <!-- <h1 class="glyphicon glyphicon-tasks" style="font-size:12em;color:#00001a">a</h1>
                 <h2 style="margin-top: 0;color:#00001a"><a href="" class="btn btn-sm btn-primary btn-block"
                     role="button">Schedule</a></h2>
                 <h3 style="margin-top: 0;color:#00001a">My Schedule</h3> -->
-                <table class="table table-hover">
-                  <tr>
-                    <th scope="row">Nombre</th>
-                    <td>Frank Andia Monroy </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Email</th>
-                    <td>frankzick1@gmail.com </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Telf.</th>
-                    <td>+51 982739106 </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Fecha Nac.</th>
-                    <td>07/06/1996 </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Nacionalidad</th>
-                    <td>Perú</td>
-                  </tr>
-                </table>
-              </center>
-            </div>
+                  <table class="table table-hover">
+                    <tr>
+                      <th scope="row">Nombre</th>
+                      <td>Frank Andia Monroy</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Email</th>
+                      <td>frankzick1@gmail.com</td>
+                    </tr>
 
+                    <tr>
+                      <th scope="row">Fecha Nac.</th>
+                      <td>07/06/1996</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nacionalidad</th>
+                      <td>Perú</td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
 
-            <div class="bhoechie-tab-content">
-              <center>
-                <table class="table table-hover">
-                  <tr>
-                    <th scope="row">UPC</th>
-                    <td>Ingenieria de Sistemas - Actualidad </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">CIBERTEC</th>
-                    <td>Computación e Informática - Egresado</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">TECSUP</th>
-                    <td>Desarrollo Web FullStack - Certificación</td>
-                  </tr>
-                </table>
-              </center>
-            </div>
+              <div class="bhoechie-tab-content">
+                <center>
+                  <table class="table table-hover">
+                    <tr>
+                      <th scope="row">CIBERTEC</th>
+                      <td>Computación e Informática - Egresado</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">TECSUP</th>
+                      <td>Desarrollo Web FullStack - Certificación</td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
 
-            <!-- <div class="bhoechie-tab-content">
+              <!-- <div class="bhoechie-tab-content">
               <center>
                 <h1 class="glyphicon glyphicon-edit" style="font-size:12em;color:#00001a"></h1>
                 <h2 style="margin-top: 0;color:#00001a"><a href="" class="btn btn-sm btn-primary btn-block"
@@ -199,82 +264,163 @@
                 <h3 style="margin-top: 0;color:#00001a">information Settings</h3>
               </center>
             </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="row text-white">
+        <div class="col-lg-6">
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <h4>Introducción</h4>
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Este portafolio fue creado completamente en HTML, CSS y JavaScript
+              con el fin de mostrar algunos de los proyectos que pude
+              desarrollar. En la página de contacto se encuentran mis redes
+              sociales y correos a los que pueden contactarme, y en la página de
+              servicios algunas de las cosas a las que me dedico día a día.
+            </p>
+          </div>
+
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a href="./proyectos-moviles.html"
+                ><h4>Aplicaciones Móviles</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Aquí encontraran algunas aplicaciones móviles que he realizado,
+              mediante el lenguaje de programación ReactNative puedo crear
+              aplicaciones híbridas que se pueden renderizar tanto para Android
+              como IOs.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a href="https://franklam7.github.io/Tienda-Online/#/"
+                ><h4>Tienda Online</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Esta aplicación web fue creada en ANGULAR, muestra la interfaz de
+              una tienda que muestra diferentes categorias y productos, esta
+              información de muestra se obtienen de una base de datos alojada en
+              FIREBASE de Google.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a href="https://franklam7.github.io/PeliculasApp/"
+                ><h4>Peliculas App</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Aplicación creada en ANGULAR la cual muestra una sencilla interfaz
+              de bienvenida, donde hay un boton ingresar, en el cual demuestro
+              que cuento con los conocimientos necesarios para integrar el
+              loggin con el api de google. Una vez logeado, muestra una interfaz
+              con las peliculas mas populares a la fecha, esta información es
+              obtenida de una API externa, tambien tienes un buscador de
+              peliculas el cual busca en el API y devuelve los resultados a la
+              busqueda. Cada pelicula tiene un boton rojo de información el cual
+              te lleva a otra pantalla donde puedes encontrar más información de
+              la misma.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a href="https://franklam7.github.io/Mi-Galeria/index.html"
+                ><h4>Mi Galeria</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Soy un apacionado de la fotografia, aqui muestro una interfaz
+              llamativa enseñando algunas de mis capturas.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a
+                href="https://franklam7.github.io/ProyectoRutas/ProyectoRutas/index.html"
+                ><h4>Proyecto Rutas</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Proyecto creado con HTML, CSS, JS muestra el uso de los mapas de
+              google donde se pueden crear rutas propias en la ciudad en la que
+              te encuentras, estas rutas son guardadas por cada usuario.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a href="https://franklam7.github.io/ProyectoJS/index.html"
+                ><h4>Proyecto Blog</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Blog sencillo creado con HTML, CSS, JS.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <a
+                href="https://franklam7.github.io/Codigo5-Semana2-PaginaCounterStrike/index.html"
+                ><h4>CS</h4></a
+              >
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Página web creada en HTML, CSS, JS por un equipo de estudios del
+              instituto.
+            </p>
+          </div>
+          <div class="bg-white p-5 rounded my-5 shadow-sm">
+            <div class="section-title">
+              <h4>Despedida</h4>
+            </div>
+            <p class="lead font-italic mb-0 text-muted">
+              Muchas gracias por el tiempo dedicado a ver mis proyectos,
+              cualquier consulta no dudes en ponerte en contacto conmigo,
+              Saludos.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="separator"></div>
-    <div class="row text-white">
-      <div class="col-lg-7">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor.
-        </p>
-        <div class="bg-white p-5 rounded my-5 shadow-sm">
-          <p class="lead font-italic mb-0 text-muted">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        </div>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor.
-        </p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor.
-        </p>
-      </div>
-      <div class="col-lg-5">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor.
-        </p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure
-          dolor.
-        </p>
-      </div>
-    </div>
-
-  </div>
-  <!-- End demo content -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="./js/index2.js"></script>
-</body>
-
+    <!-- image view
+     -->
+     <div class="modal fade product_view" id="product_view">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-6 product_img">
+                          <img src="./img/WhatsApp Image 2019-08-27 at 10.52.57 PM.jpeg" class="img-responsive" width="370"/>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    <!-- end image view -->
+    <!-- End demo content -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index2.js"></script>
+  </body>
 </html>

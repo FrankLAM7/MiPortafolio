@@ -1,105 +1,121 @@
-html,body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 .vertical-nav {
-    min-width: 17rem;
-    width: 17rem;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s;
-  }
-  
-  .page-content {
-    width: calc(100% - 17rem);
-    margin-left: 17rem;
-    transition: all 0.4s;
-  }
-  
-  /* for toggle behavior */
-  
-  #sidebarCollapse{
-    position: fixed;
-    top: 5px;
-  }
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
 
-  #sidebar.active {
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebarCollapse {
+  position: fixed;
+  top: 5px;
+}
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
     margin-left: -17rem;
   }
-  
-  #content.active {
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
     width: 100%;
     margin: 0;
   }
-  
-  @media (max-width: 768px) {
-    #sidebar {
-      margin-left: -17rem;
-    }
-    #sidebar.active {
-      margin-left: 0;
-    }
-    #content {
-      width: 100%;
-      margin: 0;
-    }
-    #content.active {
-      margin-left: 17rem;
-      width: calc(100% - 17rem);
-    }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
   }
-  @media (min-width: 768px) {
-    #sidebar {
-      margin-left: -17rem;
-    }
-    #sidebar.active {
-      margin-left: 0;
-    }
-    #content {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-    }
-    #content.active {
-      margin-left: 17rem;
-      width: calc(100% - 17rem);
-    }
+}
+@media (min-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
   }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
 
-  /*
+/*
   *
   * ==========================================
   * FOR DEMO PURPOSE
   * ==========================================
   *
   */
-  
-  body {
-    background: #599fd9;
-    background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
-    background: linear-gradient(to right, #599fd9, #c2e59c);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-  
-  .separator {
-    margin: 3rem 0;
-    border-bottom: 1px dashed #fff;
-  }
-  
-  .text-uppercase {
-    letter-spacing: 0.1em;
-  }
-  
-  .text-gray {
-    color: #aaa;
-  }
 
+body {
+  background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
-  iframe{
-    height: 100%;
-    width: 100%;
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+.product_view .modal-dialog {
+  max-width: 400px;
+  width: 100%;
+}
+.pre-cost {
+  text-decoration: line-through;
+  color: #a5a5a5;
+}
+.space-ten {
+  padding: 10px 0;
+}
+.plus-img:hover {
+  background-color: #004c99;
+  color: #ffffff;
+  cursor: pointer;
 }
